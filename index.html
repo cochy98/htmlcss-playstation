@@ -18,9 +18,12 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-dark my-bg-dblue navbar-expand-md">
+        <section id="header-top" class="d-flex justify-content-end p-2">
+            <img src="img/sony_logo.svg" alt="Sony logo">
+        </section>
+        <nav class="navbar navbar-light bg-light navbar-expand-md">
             <!-- Container -->
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Header Nav logo -->
                 <a class="navbar-brand fw-bold" href="#">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +50,49 @@
     </header>
     <!-- /Header -->
 
-    <main></main>
+    <main>
+        <!-- Section Jumbotron -->
+        <section id="jumbotron-carousel">
+            <!-- Immagine di sfondo del jumbotron -->
+            <div class="bg-jumbo">
+                <!-- Container della descrizione -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Descrizione del jumbotron -->
+                        <div class="col-xxl-5">
+                            <h1>Descrizione del jumbotron</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel del jumbotron con 6 card img -->
+            <div class="carousel container-fluid">
+                <div class="row">
+                    <div class="col-xxl-2">
+                        <div class="card"></div>
+                    </div>
+                    <div class="col-xxl-2">
+                        <div class="card"></div>
+                    </div>
+                    <div class="col-xxl-2">
+                        <div class="card"></div>
+                    </div>
+                    <div class="col-xxl-2">
+                        <div class="card"></div>
+                    </div>
+                    <div class="col-xxl-2">
+                        <div class="card"></div>
+                    </div>
+                    <div class="col-xxl-2">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel del jumbotron con 6 card img -->
+        </section>
+        <!-- /Section Jumbotron -->
+    </main>
 
     <footer></footer>
 </body>

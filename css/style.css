@@ -1,0 +1,31 @@
+/* Sfondo nero per l'header top */
+section#header-top{
+    background-color: black;
+}
+
+/* Larghezza fissa per il logo header top */
+section#header-top>img{
+    width: 100px;
+}
+
+/* Sfondo del Jumbotron (parte alta) */
+#jumbotron-carousel>.bg-jumbo{
+    height: 500px;
+    background-color: brown;
+}
+
+/* Carousel del Jumbotron (parte bassa) */
+#jumbotron-carousel>.carousel{
+    height: 250px;
+    background-color: blueviolet;
+}
+
+/* Descrizione del Jumbotron */
+.bg-jumbo .col-xxl-5{
+    border: 2px solid red;
+}
+
+.carousel .card{
+    height: 120px;
+    background-color: rgb(127, 103, 150);
+}
