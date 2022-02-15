@@ -24,7 +24,24 @@ section#header-top>img{
     border: 2px solid red;
 }
 
+/* Altezza fissa per le card del carousel */
 .carousel .card{
     height: 120px;
+    background-color: rgb(127, 103, 150);
+}
+
+/* Section "prodotto di punta" */
+section#flagship-product{
+    background-color: chocolate;
+}
+
+/* Colonne del prodotto di punta */
+section#flagship-product .box{
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+/* Altezza fissa per le card flagship product */
+section#flagship-product .card{
     background-color: rgb(127, 103, 150);
 }
