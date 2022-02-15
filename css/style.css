@@ -16,7 +16,6 @@ section#header-top>img{
 
 /* Carousel del Jumbotron (parte bassa) */
 #jumbotron-carousel>.carousel{
-    height: 250px;
     background-color: blueviolet;
 }
 
