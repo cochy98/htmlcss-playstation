@@ -12,6 +12,19 @@
     width: 30px;
 }
 
+/* Colore custom per i btn */
+.my-btn-custom{
+    color: #0d6efd;
+    background-color: #d9dadc;
+    border-color: #d9dadc;
+}
+
+/* Colore custom per i btn in hover */
+.my-btn-custom:hover{
+    color: #0d6efd;
+    background-color: #c8cbcf;
+}
+
 /* Grandezza fissa per il logo dei jumbotron */
 img.jumbo-logo{
     width: 250px;
@@ -69,7 +82,14 @@ section#new-games .card>img{
 	border-radius: 20px;
 }
 
-section#product-ps4{
+/* Sfondo per il primo banner */
+section#banner-ps-plus{
+    background-color: #bebcbb;
+}
+
+/* Fino a dispositivi Large l'immagine del banner occuperà il 100% della larghezza (mobile-first) */
+.banner .banner-img{
+    max-width: 100%;
 }
 
 
@@ -82,8 +102,17 @@ section#product-ps4{
     
 } 
 
-/* Media query per schermi Extra Large */
-@media screen and (min-width: 1200px) {
+/* Media query per Large */
+@media screen and (min-width: 992px) {
+    /* Su dispositivi dal Large in su, l'immagine del banner occuperà meno spazio */
+    .banner .banner-img {
+        max-width: 80%;
+    }
+    
+} 
+
+/* Media query per schermi Extra extra Large */
+@media screen and (min-width: 1400px) {
     section#flagship-product .card{
         padding: 0 3rem;
     }
