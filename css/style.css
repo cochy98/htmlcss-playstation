@@ -17,6 +17,12 @@ img.jumbo-logo{
     width: 250px;
 }
 
+/* Resetto lo stile di base per le card di tutte le section */
+.card{
+    border: none;
+	background-color: transparent;
+}
+
 /* Sfondo nero per l'header top */
 section#header-top{
     background-color: black;
@@ -40,15 +46,9 @@ section#header-top>img{
     border-radius: 20px;
 }
 
-/* Tolgo il border originale alle card del flagship-product */
+/* Allineo al centro il testo delle card del flagship-product */
 section#flagship-product .card{
-    border: none;
     text-align: center;
-}
-
-/* Le immagini delle card si prendono del padding */
-section#flagship-product .card>img{
-    padding: 2rem;
 }
 
 /* Richiamo il secondo jumbotron */
@@ -64,27 +64,34 @@ section#new-games{
     background-color: #1f1f1f;
 }
 
-/* Resetto lo stile di base per le card della section "new-games" */
-section#new-games .card{
-    border: none;
-    border-radius: none;
-	background-color: transparent;
-}
-
-/* Qui aggiungo un radius alle immagini delle card */
+/* Radius alle immagini delle card "new-games" */
 section#new-games .card>img{
 	border-radius: 20px;
 }
 
 section#product-ps4{
-    height: 400px;
-    background-color: yellowgreen;
 }
 
 
 /* ?MEDIA QUERY */
-/* @media screen and (min-width: 992px) {
+/* Media query per tablet */
+@media screen and (min-width: 768px) {
+    section#flagship-product .card>img{
+        padding: 1rem;
+    }
     
-} */ 
+} 
+
+/* Media query per schermi large */
+@media screen and (min-width: 992px) {
+    section#flagship-product .card{
+        padding: 0 3rem;
+    }
+
+    section#flagship-product .card>img{
+        padding: 2rem;
+    }
+    
+} 
 
 /* <div class="row px-2 px-md-4"> */
