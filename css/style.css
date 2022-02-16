@@ -82,8 +82,8 @@ section#product-ps4{
     
 } 
 
-/* Media query per schermi large */
-@media screen and (min-width: 992px) {
+/* Media query per schermi Extra Large */
+@media screen and (min-width: 1200px) {
     section#flagship-product .card{
         padding: 0 3rem;
     }
