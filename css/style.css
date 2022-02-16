@@ -12,6 +12,11 @@
     width: 30px;
 }
 
+/* Resetto il radius di base bootstrap sulle card */
+.card-img-top {
+	border-radius: 0;
+}
+
 /* Colore custom per i btn */
 .my-btn-custom{
     color: #0d6efd;
