@@ -1,3 +1,10 @@
+.my-p-relative{position: relative;}
+.my-p-absolute{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
 /* Ridimensionamento per l'icona chevron dei dropdown menu */
 .chevron-down {
     width: 12px;
@@ -26,11 +33,6 @@ section#header-top>img{
     background-position: center;
 }
 
-/* Carousel del Jumbotron (parte bassa) */
-#jumbotron-carousel>.my-carousel{
-    background-color: blueviolet; 
-}
-
 /* Padding bottom per il jumbo-description */
 .bg-jumbo .jumbo-description{
     padding-bottom: 3.5rem;
@@ -41,12 +43,7 @@ section#header-top>img{
     width: 250px;
 }
 
-/* Altezza fissa per le card del carousel */
-.my-carousel .my-card{
-    /* padding: 2rem .5rem; */ 
-}
-
-.my-carousel .my-card>img{
+#jumbotron-carousel .my-card>img{
     border-radius: 20px;
 }
 
