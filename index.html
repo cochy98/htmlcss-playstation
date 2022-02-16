@@ -99,15 +99,14 @@
         <!-- Section Jumbotron -->
         <section id="jumbotron-carousel" class="mb-5">
             <!-- Sfondo del jumbotron -->
-            <div class="bg-jumbo my-p-relative">
+            <div class="bg-jumbo mb-5">
                 <!-- Container della descrizione -->
-                <div class="container-fluid my-p-absolute">
-                    <!-- Row con sfondo del jumbotron -->
+                <div class="container-fluid">
                     <div class="row text-white px-2 px-md-4">
                         <!-- Descrizione del jumbotron -->
                         <div class="col-12 col-sm-12 col-md-12 col-xl-5">
                             <div class="jumbo-description">
-                                <img src="img/returnal-hero-banner-logo.png" class="py-3" alt="Returnal logo">
+                                <img src="img/returnal-hero-banner-logo.png" class="jumbo-logo py-3" alt="Returnal logo">
                                 <h1>Rompi il cerchio</h1>
                                 <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio quasi nihil tempore pariatur ipsum facilis quos similique omnis blanditiis. Vel distinctio quos, et porro doloribus ex maiores vero natus.</p>
                                 <button type="button" class="btn btn-danger rounded-pill">Acquista Ora</button>
@@ -115,10 +114,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- /Container della descrizione -->
             </div>
 
+            <!-- Container carousel del jumbotron con 6 card img -->
             <div class="container-fluid">
-                <!-- Row carousel con 6 card img -->
                 <div class="row px-2 px-md-4 gx-3 gy-4 gx-lg-4 gy-lg-5">
                 <!-- <div class="row px-2 px-md-4"> -->
                     <div class="col-6 col-sm-4 col-md-4 col-xl-2">
@@ -153,71 +153,65 @@
                     </div>
                 </div>
             </div>
-            <!-- Carousel del jumbotron con 6 card img -->
+            <!-- /Container carousel del jumbotron con 6 card img -->
         </section>
         <!-- /Section Jumbotron -->
 
         <!-- Section flagship Product -->
-        <section id="flagship-product">
+        <section id="flagship-product" class="mb-5">
             <!-- Container della section -->
             <div class="container-fluid">
                 <!-- Row contenente il titolo della section -->
-                <div class="row text-center">
+                <div class="row text-center px-2 px-md-4 mb-5 mb-md-0">
                     <div class="col-12">
+                        <h6 class="text-uppercase text-primary mb-0">Play has no limits</h6>
                         <h1>Ecco la PlayStation 5</h1>
+                        <p class="fs-5">Tuffati in nuove possibilità di gioco completamente inaspettate</p>
                     </div>
                 </div>
 
                 <!-- Row product & description full-width -->
-                <div class="row">
+                <div class="row align-items-center px-2 px-md-4">
                     <div class="col-12 col-md-6">
-                        <div class="box"></div>
+                        <h2>Console PlayStation 5</h2>
+                        <p>Sperimenta la nuova generazione di incredibili giochi PlayStation.</p>
+                        <button type="button" class="btn btn-primary rounded-pill">Maggiori informazioni</button>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="box"></div>
+                        <img src="img/playstation-5-thumb.png" class="img-fluid" alt="playstation-5 Photo">
                     </div>
                 </div>
 
                 <!-- Row product card carousel -->
-                <div class="row row-cols-3 row-cols-md-5 g-4">
+                <div class="row row-cols-3 row-cols-md-5 px-2 px-md-4 g-4">
                     <div class="col">
                         <div class="card">
-                            <img src="img/joypad-thumb.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                            <img src="img/playstation-5-thumb.png" class="card-img-top" alt="PS5 Picture">
+                            <h5 class="card-title d-none d-md-block">Console PS5</h5>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/joypad-thumb.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                            <img src="img/joypad-thumb.png" class="card-img-top" alt="joypad PS5 Photo">
+                            <h5 class="card-title d-none d-md-block">Controller wireless DualSense</h5>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/joypad-thumb.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                            <img src="img/headset-thumb.png" class="card-img-top" alt="headset PS5 Photo">
+                            <h5 class="card-title d-none d-md-block">Cuffie wireless con microfono PULSE 3</h5>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/joypad-thumb.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                            <img src="img/remote-thumb.png" class="card-img-top" alt="remote PS5 Photo">
+                            <h5 class="card-title d-none d-md-block">Telecomando Media</h5>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card">
-                            <img src="img/joypad-thumb.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                            </div>
+                            <img src="img/camera-thumb.jpg" class="card-img-top" alt="camera PS5 Photo">
+                            <h5 class="card-title d-none d-md-block">Telecamera HD</h5>
                         </div>
                     </div>
                 </div>
@@ -226,6 +220,45 @@
             <!-- /Container della section -->
         </section>
         <!-- /Section flagship Product -->
+
+        <!-- Section Jumbotron -->
+        <section id="jumbotron" class="d-flex align-items-end">
+            <div class="container-fluid">
+                <div class="row text-white px-2 px-md-4">
+                    <div class="col-12 col-lg-4">
+                        <div class="jumbo-description pb-5">
+                            <img src="img/it-takes-two-logo.png" class="jumbo-logo py-3" alt="takes-two logo">
+                            <h1>Un'avventura cooperativa selvaggia ti attende</h1>
+                            <p class="py-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates in eligendi eveniet est ratione? Ex fugiat possimus suscipit saepe consectetur aut, corporis in, nisi sit esse quam debitis iusto!</p>
+                            <button type="button" class="btn btn-danger rounded-pill">Acquista Ora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section Jumbotron -->
+
+        <!-- Section new-games -->
+        <section id="new-games">
+            <div class="container-fluid text-white">
+                <div class="row px-2 px-md-4">
+                    <div class="col-12">
+                        <h2>Nuove uscite</h2>
+                        <h3>Giochi incredibili per PS4 e PS5 disponibili ora</h3>
+                    </div>
+                </div>
+
+                <div class="row row-cols-3 row-cols-md-5 px-2 px-md-4 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/playstation-5-thumb.png" class="card-img-top" alt="PS5 Picture">
+                            <h5 class="card-title">Console PS5</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section new-games -->
     </main>
 
     <footer></footer>

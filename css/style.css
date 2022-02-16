@@ -1,9 +1,5 @@
 .my-p-relative{position: relative;}
-.my-p-absolute{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
+.my-p-absolute{position: absolute;}
 
 /* Ridimensionamento per l'icona chevron dei dropdown menu */
 .chevron-down {
@@ -11,8 +7,14 @@
     margin-left: .1rem;
 }
 
+/* Width fissa per l'icona di search */
 .search-icon{
     width: 30px;
+}
+
+/* Grandezza fissa per il logo dei jumbotron */
+img.jumbo-logo{
+    width: 250px;
 }
 
 /* Sfondo nero per l'header top */
@@ -27,47 +29,50 @@ section#header-top>img{
 
 /* Sfondo del Jumbotron (parte alta) */
 #jumbotron-carousel .bg-jumbo {
-	height: 650px;
 	background-image: url("../img/jumbo-bg.png");
 	background-size: cover;
     background-position: center;
+    padding: 21rem 0 4rem;
 }
 
-/* Padding bottom per il jumbo-description */
-.bg-jumbo .jumbo-description{
-    padding-bottom: 3.5rem;
-}
-
-/* Grandezza logo del jumbotron */
-.bg-jumbo .jumbo-description>img{
-    width: 250px;
-}
-
+/* Border radius per le card del primo jumbotron */
 #jumbotron-carousel .my-card>img{
     border-radius: 20px;
 }
 
-/* Section "prodotto di punta" */
-section#flagship-product{
-    background-color: chocolate;
-}
-
-/* Colonne del prodotto di punta */
-section#flagship-product .box{
-    height: 400px;
-    background-color: antiquewhite;
-}
-
-/* Altezza fissa per le card flagship product */
+/* Tolgo il border originale alle card del flagship-product */
 section#flagship-product .card{
-    background-color: rgb(127, 103, 150);
+    border: none;
+    text-align: center;
+}
+
+/* Le immagini delle card si prendono del padding */
+section#flagship-product .card>img{
+    padding: 2rem;
+}
+
+/* Richiamo il secondo jumbotron */
+section#jumbotron{
+    height: 650px;
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sfondo per la section "nuove uscite" */
+section#new-games{
+    background-color: #1f1f1f;
+}
+
+section#new-games .box{
+    height: 250px;
+    background-color: red;
 }
 
 
 /* ?MEDIA QUERY */
 /* @media screen and (min-width: 992px) {
-    .my-carousel .my-card {
-        padding: 3.5rem .3rem;
-    }
     
 } */ 
+
+/* <div class="row px-2 px-md-4"> */
