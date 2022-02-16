@@ -64,9 +64,21 @@ section#new-games{
     background-color: #1f1f1f;
 }
 
-section#new-games .box{
-    height: 250px;
-    background-color: red;
+/* Resetto lo stile di base per le card della section "new-games" */
+section#new-games .card{
+    border: none;
+    border-radius: none;
+	background-color: transparent;
+}
+
+/* Qui aggiungo un radius alle immagini delle card */
+section#new-games .card>img{
+	border-radius: 20px;
+}
+
+section#product-ps4{
+    height: 400px;
+    background-color: yellowgreen;
 }
 
 
