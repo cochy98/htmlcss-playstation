@@ -92,6 +92,11 @@ section#banner-ps-plus{
     background-color: #bebcbb;
 }
 
+/* Sfondo per il secondo banner */
+section#banner-ps-now{
+    background-color: #161c3b;
+}
+
 /* Fino a dispositivi Large l'immagine del banner occuperà il 100% della larghezza (mobile-first) */
 .banner .banner-img{
     max-width: 100%;
