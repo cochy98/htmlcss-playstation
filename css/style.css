@@ -1,3 +1,13 @@
+/* Ridimensionamento per l'icona chevron dei dropdown menu */
+.chevron-down {
+    width: 12px;
+    margin-left: .1rem;
+}
+
+.search-icon{
+    width: 30px;
+}
+
 /* Sfondo nero per l'header top */
 section#header-top{
     background-color: black;
@@ -5,29 +15,39 @@ section#header-top{
 
 /* Larghezza fissa per il logo header top */
 section#header-top>img{
-    width: 100px;
+    width: 80px;
 }
 
 /* Sfondo del Jumbotron (parte alta) */
-#jumbotron-carousel>.bg-jumbo{
-    height: 500px;
-    background-color: brown;
+#jumbotron-carousel .bg-jumbo {
+	height: 650px;
+	background-image: url("../img/jumbo-bg.png");
+	background-size: cover;
+    background-position: center;
 }
 
 /* Carousel del Jumbotron (parte bassa) */
-#jumbotron-carousel>.carousel{
-    background-color: blueviolet;
+#jumbotron-carousel>.my-carousel{
+    background-color: blueviolet; 
 }
 
-/* Descrizione del Jumbotron */
-.bg-jumbo .col-xxl-5{
-    border: 2px solid red;
+/* Padding bottom per il jumbo-description */
+.bg-jumbo .jumbo-description{
+    padding-bottom: 3.5rem;
+}
+
+/* Grandezza logo del jumbotron */
+.bg-jumbo .jumbo-description>img{
+    width: 250px;
 }
 
 /* Altezza fissa per le card del carousel */
-.carousel .card{
-    height: 120px;
-    background-color: rgb(127, 103, 150);
+.my-carousel .my-card{
+    /* padding: 2rem .5rem; */ 
+}
+
+.my-carousel .my-card>img{
+    border-radius: 20px;
 }
 
 /* Section "prodotto di punta" */
@@ -45,3 +65,12 @@ section#flagship-product .box{
 section#flagship-product .card{
     background-color: rgb(127, 103, 150);
 }
+
+
+/* ?MEDIA QUERY */
+/* @media screen and (min-width: 992px) {
+    .my-carousel .my-card {
+        padding: 3.5rem .3rem;
+    }
+    
+} */ 

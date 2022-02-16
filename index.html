@@ -18,32 +18,77 @@
 <body>
     <!-- Header -->
     <header>
-        <section id="header-top" class="d-flex justify-content-end p-2">
+        <section id="header-top" class="d-flex justify-content-end p-3">
             <img src="img/sony_logo.svg" alt="Sony logo">
         </section>
-        <nav class="navbar navbar-light bg-light navbar-expand-md">
+        <nav class="navbar navbar-light bg-light navbar-expand-lg">
             <!-- Container -->
             <div class="container-fluid">
                 <!-- Header Nav logo -->
-                <a class="navbar-brand fw-bold" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">
+                    <img src="img/play_logo.svg" alt="PlayStation Logo">
+                </a>
+                <!-- Button "hamburger" visibile su dispositivi dal medium in giù -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Nav list right -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                <!-- Elementi che diventano invisibili dai medium in giù -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#cards">portfolio</a>
+                            <a class="nav-link" aria-current="page" href="#">
+                                Giochi
+                                <img src="img/chevron-down-solid.svg" class="chevron-down" alt="chevron-down icon">
+                            </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#aboutus">about</a>
+                            <a class="nav-link" aria-current="page" href="#">
+                                Hardware
+                                <img src="img/chevron-down-solid.svg" class="chevron-down" alt="chevron-down icon">
+                            </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#contacts">contact</a>
+                            <a class="nav-link" aria-current="page" href="#">
+                                Servizi
+                                <img src="img/chevron-down-solid.svg" class="chevron-down" alt="chevron-down icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                Novità
+                                <img src="img/chevron-down-solid.svg" class="chevron-down" alt="chevron-down icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                Fai Acquisti
+                                <img src="img/chevron-down-solid.svg" class="chevron-down" alt="chevron-down icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                Supporto
+                                <img src="img/chevron-down-solid.svg" class="chevron-down" alt="chevron-down icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                My PlayStation
+                                <img src="img/chevron-down-solid.svg" class="chevron-down" alt="chevron-down icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-dark text-white" href="#aboutus">Accedi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="img/lens.svg" class="search-icon" alt="Search icon">
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <!-- /Nav list right -->
             </div>
             <!-- /Container -->
         </nav>
@@ -52,40 +97,56 @@
 
     <main>
         <!-- Section Jumbotron -->
-        <section id="jumbotron-carousel">
-            <!-- Immagine di sfondo del jumbotron -->
-            <div class="bg-jumbo">
-                <!-- Container della descrizione -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <!-- Descrizione del jumbotron -->
-                        <div class="col-12 col-sm-12 col-md-12 col-xl-5">
-                            <h1>Descrizione del jumbotron</h1>
+        <section id="jumbotron-carousel" class="mb-5">
+            <!-- Container della descrizione -->
+            <div class="container-fluid">
+                <!-- Row con sfondo del jumbotron -->
+                <div class="row bg-jumbo text-white align-items-end px-2 px-md-4">
+                    <!-- Descrizione del jumbotron -->
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-5">
+                        <div class="jumbo-description">
+                            <img src="img/returnal-hero-banner-logo.png" class="py-3" alt="Returnal logo">
+                            <h1>Rompi il cerchio</h1>
+                            <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio quasi nihil tempore pariatur ipsum facilis quos similique omnis blanditiis. Vel distinctio quos, et porro doloribus ex maiores vero natus.</p>
+                            <button type="button" class="btn btn-danger rounded-pill">Acquista Ora</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Carousel del jumbotron con 6 card img -->
-            <div class="carousel container-fluid">
-                <div class="row">
+            <div class="my-carousel container-fluid">
+                <div class="row px-2 px-md-4 gx-3 gy-4 gx-lg-4 gy-lg-5">
+                <!-- <div class="row px-2 px-md-4"> -->
                     <div class="col-6 col-sm-4 col-md-4 col-xl-2">
-                        <div class="card"></div>
+                        <div class="my-card">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt="returnal PS5">
+                        </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-4 col-xl-2">
-                        <div class="card"></div>
+                        <div class="my-card">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid" alt="ratchet and clank PS5">
+                        </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-4 col-xl-2">
-                        <div class="card"></div>
+                        <div class="my-card">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt="returnal PS5">
+                        </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-4 col-xl-2">
-                        <div class="card"></div>
+                        <div class="my-card">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid" alt="ratchet and clank PS5">
+                        </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-4 col-xl-2">
-                        <div class="card"></div>
+                        <div class="my-card">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" class="img-fluid" alt="returnal PS5">
+                        </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-4 col-xl-2">
-                        <div class="card"></div>
+                        <div class="my-card">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" class="img-fluid" alt="ratchet and clank PS5">
+                        </div>
                     </div>
                 </div>
             </div>
