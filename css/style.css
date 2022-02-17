@@ -131,6 +131,27 @@ section#footer-nav{
     background-color: #00439c;
 }
 
+/* Altezza fissa per i loghi del footer */
+section#footer-nav img{
+    height: 80px;
+}
+
+/* Reset stile di base liste footer */
+section#footer-nav ul{
+    list-style-type: none;
+}
+
+/* Colore dei link del footer */
+section#footer-nav ul>li>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Link del footer in hover */
+section#footer-nav ul>li>a:hover{
+    text-decoration: underline;
+}
+
 
 /* ?MEDIA QUERY */
 /* ! Media query per Small device */
