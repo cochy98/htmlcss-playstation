@@ -1,6 +1,10 @@
 .my-p-relative{position: relative;}
 .my-p-absolute{position: absolute;}
 
+body{
+    overflow-x: hidden;
+}
+
 /* Ridimensionamento per l'icona chevron dei dropdown menu */
 .chevron-down {
     width: 12px;
@@ -102,26 +106,69 @@ section#banner-ps-now{
     max-width: 100%;
 }
 
+/* Regole per la lista dei link socia su mobile */
+section#link-social ul{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/* Su mobile visualizzo due elementi per volta */
+section#link-social ul>li{
+	width: calc(98% / 2 - 1rem);
+	margin: 1.5rem .5rem;
+}
+
+/* L'immagine della lista prende il 100% dello spazio */
+section#link-social img{
+    width: 100%;
+}
+
+/* Sfondo per il footer */
+section#footer-nav{
+    height: 600px;
+    background-color: #00439c;
+}
+
 
 /* ?MEDIA QUERY */
-/* Media query per tablet */
+/* ! Media query per Small device */
+@media screen and (min-width: 577px) {
+    /* A partire dai dispositivi small gli elementi della lista link social saranno allineati al centro */
+    section#link-social ul{
+        justify-content: center;
+    }
+
+    /* Cambio grandezza dei link social su small */
+    section#link-social ul>li{
+        width: 15%;
+    } 
+} 
+
+/* ! Media query per tablet */
 @media screen and (min-width: 768px) {
     section#flagship-product .card>img{
         padding: 1rem;
     }
-    
 } 
 
-/* Media query per Large */
+/* ! Media query per Large */
 @media screen and (min-width: 992px) {
     /* Su dispositivi dal Large in su, l'immagine del banner occuperà meno spazio */
     .banner .banner-img {
         max-width: 80%;
     }
-    
+
+    /* Cambio grandezza e margine dei link social su large */
+    section#link-social ul>li{
+        width: 10%;
+        margin: 1.5rem .75rem;
+    }
 } 
 
-/* Media query per schermi Extra extra Large */
+/* ! Media query per schermi Extra extra Large */
 @media screen and (min-width: 1400px) {
     section#flagship-product .card{
         padding: 0 3rem;
@@ -130,7 +177,6 @@ section#banner-ps-now{
     section#flagship-product .card>img{
         padding: 2rem;
     }
-    
 } 
 
 /* <div class="row px-2 px-md-4"> */
