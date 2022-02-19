@@ -8,6 +8,11 @@ main{
     margin-top: 122px;
 }
 
+/* Classe proria per il font weight */
+.my-fw-600{
+    font-weight: 600;
+}
+
 /* Ridimensionamento per l'icona chevron dei dropdown menu */
 .chevron-down {
     width: 12px;
@@ -39,7 +44,7 @@ main{
 
 /* Grandezza fissa per il logo dei jumbotron */
 img.jumbo-logo{
-    width: 250px;
+    width: 320px;
 }
 
 /* Resetto lo stile di base per le card di tutte le section */
@@ -84,10 +89,10 @@ section#flagship-product .card{
 
 /* Richiamo il secondo jumbotron */
 section#jumbotron{
-    height: 650px;
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
     background-size: cover;
     background-position: center;
+    padding: 8rem 0 2rem;
 }
 
 /* Sfondo per la section "nuove uscite" */
@@ -142,7 +147,7 @@ section#footer-nav{
 
 /* Altezza fissa per i loghi del footer */
 section#footer-nav img{
-    height: 80px;
+    height: 62px;
 }
 
 /* Reset stile di base liste footer */
