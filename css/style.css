@@ -95,11 +95,18 @@ section#header-top>img{
 }
 
 /* Border sulla card active del carousel */
-.my-card.active{
+.my-card.active,
+.my-card:hover{
 	border: 3px solid #1797ff;
 	border-radius: 23px;
 	padding: .2rem;
 }
+
+/* Quando le card del carousel sono in hover, vengono translate sull'asse delle y */
+.my-card:hover{
+    transform: translate(0, -12px);
+} 
+
 
 /* Allineo al centro il testo delle card del flagship-product. Aggiungo un border trasparente per evitare il collasso quando le card sono in hover */
 section#flagship-product .card{
