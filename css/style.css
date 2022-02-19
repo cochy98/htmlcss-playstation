@@ -1,8 +1,11 @@
-.my-p-relative{position: relative;}
-.my-p-absolute{position: absolute;}
-
+/* Reset overflow-x su tutto il body */
 body{
     overflow-x: hidden;
+}
+
+/* Margin top al main per evitare che collassi sull'header, quando questo è posizionato in absolute */
+main{
+    margin-top: 122px;
 }
 
 /* Ridimensionamento per l'icona chevron dei dropdown menu */
@@ -13,7 +16,7 @@ body{
 
 /* Width fissa per l'icona di search */
 .search-icon{
-    width: 30px;
+    width: 35px;
 }
 
 /* Resetto il radius di base bootstrap sulle card */
@@ -53,6 +56,12 @@ section#header-top{
 /* Larghezza fissa per il logo header top */
 section#header-top>img{
     width: 80px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 /* Sfondo del Jumbotron (parte alta) */
@@ -197,6 +206,4 @@ section#footer-nav ul>li>a:hover{
     section#flagship-product .card>img{
         padding: 2rem;
     }
-} 
-
-/* <div class="row px-2 px-md-4"> */
+}
