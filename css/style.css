@@ -14,7 +14,7 @@ main{
 }
 
 /* Ridimensionamento per l'icona chevron dei dropdown menu */
-.chevron-down {
+.chevron-down{
     width: 12px;
     margin-left: .1rem;
 }
@@ -25,7 +25,7 @@ main{
 }
 
 /* Resetto il radius di base bootstrap sulle card */
-.card-img-top {
+.card-img-top{
 	border-radius: 0;
 }
 
@@ -74,6 +74,7 @@ section#header-top>img{
     width: 80px;
 }
 
+/* I link dell'header sono in grassetto ed hanno un font maggiorato */
 .navbar-light .navbar-nav .nav-link {
 	color: black;
     font-weight: 600;
@@ -93,9 +94,23 @@ section#header-top>img{
     border-radius: 20px;
 }
 
-/* Allineo al centro il testo delle card del flagship-product */
+/* Border sulla card active del carousel */
+.my-card.active{
+	border: 3px solid #1797ff;
+	border-radius: 23px;
+	padding: .2rem;
+}
+
+/* Allineo al centro il testo delle card del flagship-product. Aggiungo un border trasparente per evitare il collasso quando le card sono in hover */
 section#flagship-product .card{
     text-align: center;
+    border-radius: 0;
+    border-bottom: 3px solid transparent;
+}
+
+section#flagship-product .card.active,
+section#flagship-product .card:hover{
+    border-bottom: 3px solid #1797ff;
 }
 
 /* Richiamo il secondo jumbotron */
@@ -104,7 +119,6 @@ section#jumbotron{
     background-size: cover;
     background-position: center;
     padding: 8rem 0 2rem;
-
     position: relative;
 }
 
