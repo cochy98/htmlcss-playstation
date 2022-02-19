@@ -42,6 +42,17 @@ main{
     background-color: #c8cbcf;
 }
 
+/* Classe per creare lavover su tutta la pagina */
+.layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
 /* Grandezza fissa per il logo dei jumbotron */
 img.jumbo-logo{
     width: 320px;
@@ -93,6 +104,13 @@ section#jumbotron{
     background-size: cover;
     background-position: center;
     padding: 8rem 0 2rem;
+
+    position: relative;
+}
+
+/* Il container del jumbotron ha uno z-index superiore a quello del layover */
+section#jumbotron>.container-fluid{
+    z-index: 1;
 }
 
 /* Sfondo per la section "nuove uscite" */
